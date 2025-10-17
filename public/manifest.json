@@ -1,0 +1,27 @@
+{
+  "name": "ATN Soul - Music Producer",
+  "short_name": "ATN Soul",
+  "description": "ATN Soul - Music Producer, Composer & Lyricist from Paris. Discover the work of Ethan Fellous.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ed002a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/atn-soul-website-typo-producer-paris-ultra-soul-ultrasoul.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/atn-soul-website-typo-producer-paris-ultra-soul-ultrasoul.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["music", "entertainment", "art"],
+  "lang": "fr",
+  "dir": "ltr"
+}

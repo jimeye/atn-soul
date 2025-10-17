@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@font-face {
+  font-family: 'Lucida Console';
+  src: url('/Lucida Console/lucidaconsole.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('/Helvetica Neue LT Std/helveticaneueltstd_blk.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Lucida Console", "Courier", "Courier New", monospace;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue LT Std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+  }
+}
+
+@layer components {
+  /* Helpers pour responsive sans JS */
+  .mobile-only { display: none; }
+  .desktop-only { display: block; }
+  .text-col {}
+  .slider-col {}
+  .container-wide {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+  }
+  @media (min-width: 640px) { /* sm */
+    .container-wide {
+      padding-left: 1.5rem; /* px-6 */
+      padding-right: 1.5rem; /* px-6 */
+    }
+  }
+  @media (min-width: 1024px) { /* lg */
+    .container-wide {
+      padding-left: 2rem; /* px-8 */
+      padding-right: 2rem; /* px-8 */
+    }
+  }
+  @media (min-width: 1280px) { /* xl */
+    .container-wide {
+      padding-left: 3rem; /* px-12 */
+      padding-right: 3rem; /* px-12 */
+    }
+  }
+  @media (min-width: 1536px) { /* 2xl */
+    .container-wide {
+      padding-left: 4rem; /* px-16 */
+      padding-right: 4rem; /* px-16 */
+    }
+  }
+  
+
+  
+  .section-padding {
+    padding-top: 4rem; /* py-16 */
+    padding-bottom: 4rem; /* py-16 */
+  }
+  @media (min-width: 640px) { /* sm */
+    .section-padding {
+      padding-top: 5rem; /* py-20 */
+      padding-bottom: 5rem; /* py-20 */
+    }
+  }
+  @media (min-width: 1024px) { /* lg */
+    .section-padding {
+      padding-top: 6rem; /* py-24 */
+      padding-bottom: 6rem; /* py-24 */
+    }
+  }
+  @media (min-width: 1280px) { /* xl */
+    .section-padding {
+      padding-top: 8rem; /* py-32 */
+      padding-bottom: 8rem; /* py-32 */
+    }
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .glass-effect-dark {
+    @apply backdrop-blur-md bg-black/10 border border-white/10;
+  }
+  
+
+
+  /* Responsive layout */
+  @media (max-width: 1024px) {
+    html, body {
+      overflow: auto;
+      height: auto;
+    }
+    .responsive-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      min-height: auto;
+      width: 100%;
+      gap: 0;
+    }
+    
+    .responsive-grid > div {
+      height: auto;
+      min-height: auto;
+      max-height: none;
+      overflow: visible;
+    }
+    
+    .mobile-auto-height {
+      height: auto;
+      min-height: auto;
+      max-height: none;
+    }
+
+    /* Cacher la navigation desktop sur mobile */
+    .desktop-navigation {
+      display: none;
+    }
+
+    /* Helpers */
+    .desktop-only { display: none !important; }
+    .mobile-only { display: block !important; }
+
+    /* Afficher le header mobile */
+    .mobile-header {
+      display: block;
+    }
+    
+    .mobile-header > div {
+      display: flex;
+    }
+  }
+
+  /* Mobile paysage: 2 colonnes (texte / slider) */
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .responsive-grid { grid-template-columns: 1fr 1fr; }
+    .text-col { grid-column: 1 / 2; }
+    .slider-col { grid-column: 2 / 3; }
+  }
+
+  /* Cacher le header mobile sur desktop */
+  @media (min-width: 1025px) {
+    .mobile-header {
+      display: none !important;
+    }
+  }
+
+  /* Wide screen styles */
+  @media (min-width: 1920px) {
+    .responsive-grid {
+      max-width: 1920px !important;
+      margin: 0 auto !important;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    .responsive-grid {
+      max-width: 2560px !important;
+      margin: 0 auto !important;
+    }
+  }
+
+  /* Par défaut, cacher le header mobile */
+  .mobile-header {
+    display: none;
+  }
+
+  /* Effet "étoile filante" pour soulignement au survol */
+  .shooting-underline {
+    position: relative;
+    text-decoration: none;
+    display: inline-block; /* garantir le placement */
+    padding-bottom: 2px; /* espace pour l’underline */
+    background-image: linear-gradient(#ed002a, #ed002a);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px; /* underline caché, plus épais */
+    transition: background-size 0.15s ease;
+  }
+  .shooting-underline:hover,
+  .shooting-underline-parent:hover .shooting-underline {
+    background-size: 100% 3px; /* underline visible */
+  }
+  @keyframes shooting-dot {
+    0% { left: 0; opacity: 1; }
+    100% { left: 100%; opacity: 0; }
+  }
+}
+
+/* Custom scrollbar for wide screens */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground)) transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground));
+    border-radius: 3px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--foreground));
+  }
+  
+  .font-title {
+    font-family: "Helvetica Neue LT Std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+  }
+  
+  .font-text {
+    font-family: "Lucida Console", "Courier", "Courier New", monospace;
+    font-weight: 400;
+  }
+}

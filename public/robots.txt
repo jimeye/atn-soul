@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://atnsoul.com/sitemap.xml
+
+# Crawl-delay pour éviter de surcharger le serveur
+Crawl-delay: 1
+
+# Permettre l'indexation des images
+Allow: /images/
+Allow: /public/images/
+
+# Permettre l'indexation des fichiers audio
+Allow: /audio/
+
+# Empêcher l'indexation des fichiers de développement
+Disallow: /node_modules/
+Disallow: /.next/
+Disallow: /temp_backup/
+
+# Permettre l'indexation des polices
+Allow: /Helvetica Neue LT Std/
+Allow: /Lucida Console/
