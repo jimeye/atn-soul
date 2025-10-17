@@ -233,7 +233,7 @@ export default function LaSerrePage() {
             borderRadius: '0',
             overflow: 'auto'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               la serre aux papillons - eva wang
             </h1>
 
@@ -335,7 +335,7 @@ export default function LaSerrePage() {
             boxSizing: 'border-box',
             gridColumn: isMobileLandscape ? '1 / 2' : undefined
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               la serre aux papillons - eva wang
             </h1>
 

@@ -21,7 +21,7 @@ export function Footer() {
   // Toujours afficher le footer global
 
   return (
-    <div style={{
+    <div className="notranslate" translate="no" style={{
       height: '10px',
       backgroundColor: 'transparent',
       display: 'flex',
@@ -39,7 +39,7 @@ export function Footer() {
         rel="noopener noreferrer"
         style={{ color: '#ed002a', textDecoration: 'none', fontWeight: 'bold', marginLeft: '5px' }}
       >
-        JOSEPH-STUDIO.COM
+        JOSEPH-STUDIO-CREATIVE.COM
       </a>
       <span style={{ margin: '0 6px', color: '#ed002a' }}>—</span>
       <span style={{ color: '#ed002a' }}>Mgmt : </span>

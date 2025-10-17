@@ -283,7 +283,7 @@ export default function HomePage() {
           gridColumn: isMobileLandscape ? '1 / 2' : undefined
         }} className="mobile-auto-height">
           <div style={{ color: 'black', lineHeight: '1.6', fontFamily: 'Lucida Console, monospace', fontSize: '0.85rem' }}>
-            <h1 style={{
+            <h1 translate="no" className="notranslate" style={{
               margin: '0 0 0 0',
               color: 'black',
               fontFamily: 'Helvetica Neue LT Std, sans-serif',

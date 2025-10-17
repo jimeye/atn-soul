@@ -258,7 +258,7 @@ export default function CoProductionsPage() {
             borderRadius: '0',
             overflow: 'auto'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               co-productions
             </h1>
 
@@ -312,7 +312,7 @@ export default function CoProductionsPage() {
             overflow: 'auto',
             boxSizing: 'border-box'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               co-productions
             </h1>
 

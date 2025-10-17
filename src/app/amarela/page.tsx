@@ -222,7 +222,7 @@ export default function AmarelaPage() {
             borderRadius: '0',
             overflow: 'auto'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               amarela
             </h1>
 
@@ -369,7 +369,7 @@ export default function AmarelaPage() {
             overflow: 'auto',
             boxSizing: 'border-box'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               amarela
             </h1>
 
@@ -453,7 +453,7 @@ export default function AmarelaPage() {
                   rel="noopener noreferrer"
                   style={{ color: '#ed002a', textDecoration: 'none', fontWeight: 'bold', marginLeft: '5px' }}
                 >
-                  JOSEPH-STUDIO.COM
+                  JOSEPH-STUDIO-CREATIVE.COM
                 </a>
               </div>
             )}

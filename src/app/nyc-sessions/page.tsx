@@ -220,7 +220,7 @@ export default function NYCSessionsPage() {
             borderRadius: '0',
             overflow: 'auto'
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '2.2rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               nyc sessions
             </h1>
 
@@ -328,7 +328,7 @@ export default function NYCSessionsPage() {
             boxSizing: 'border-box',
             gridColumn: isMobileLandscape ? '1 / 2' : undefined
           }} className="mobile-auto-height">
-            <h1 style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
+            <h1 translate="no" className="notranslate" style={{ color: 'black', fontSize: '1.8rem', marginBottom: '0px', fontWeight: 'bold', fontFamily: 'Helvetica Neue LT Std, sans-serif' }}>
               nyc sessions
             </h1>
 

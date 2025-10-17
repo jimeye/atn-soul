@@ -76,7 +76,7 @@ export function MobileHeader() {
   return (
     <div className="mobile-header">
       {/* Header fixe en haut */}
-      <div style={{
+      <div className="notranslate" translate="no" style={{
         position: 'fixed',
         top: 0,
         left: 0,
@@ -184,7 +184,7 @@ export function MobileHeader() {
 
       {/* Sous-menu Stream (header) */}
       {isStreamOpen && !isMenuOpen && (
-        <div
+        <div className="notranslate" translate="no"
           style={{
             position: 'fixed',
             top: menuPos.top,
@@ -229,7 +229,7 @@ export function MobileHeader() {
 
       {/* Menu de navigation */}
       {isMenuOpen && (
-        <div style={{
+        <div className="notranslate" translate="no" style={{
           position: 'fixed',
           top: isHidden ? 0 : 96,
           left: 0,
