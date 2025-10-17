@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { PersonStructuredData } from "./structured-data";
+import { PersonStructuredData, OrganizationStructuredData, WebSiteStructuredData } from "./structured-data";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Footer } from "@/components/layout/footer";
 
@@ -121,6 +121,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased" style={{ overflowX: 'hidden', minHeight: '100vh' }}>
         <PersonStructuredData />
+        <OrganizationStructuredData />
+        <WebSiteStructuredData />
         <div className="relative" style={{ minHeight: '100vh', overflowX: 'hidden' }}>
           <main className="flex-1" style={{ minHeight: '100vh', overflowX: 'hidden' }}>
             {children}

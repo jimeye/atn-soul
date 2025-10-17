@@ -9,7 +9,9 @@ export function PersonStructuredData() {
     "image": "https://atnsoul.com/images/atn-soul-atnsoul-producer-paris-ultra-soul-ultrasoul-portrait-1.jpg",
     "sameAs": [
       "https://open.spotify.com/artist/your-spotify-id",
-      "https://music.apple.com/fr/artist/atn-soul/1455380348"
+      "https://music.apple.com/fr/artist/atn-soul/1455380348",
+      "https://www.instagram.com/atnsoul/",
+      "https://www.tiktok.com/@atnsoul"
     ],
     "jobTitle": "Music Producer",
     "worksFor": {
@@ -80,6 +82,50 @@ export function CreativeWorkStructuredData() {
     "dateCreated": "2024",
     "genre": "Film Score",
     "url": "https://atnsoul.com/la-serre-aux-papillons"
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
+
+export function OrganizationStructuredData() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ATN Soul",
+    "url": "https://atnsoul.com",
+    "logo": "https://atnsoul.com/atn-soul-website-typo-producer-paris-ultra-soul-ultrasoul.png",
+    "sameAs": [
+      "https://www.instagram.com/atnsoul/",
+      "https://www.tiktok.com/@atnsoul",
+      "https://open.spotify.com/artist/your-spotify-id",
+      "https://music.apple.com/fr/artist/atn-soul/1455380348"
+    ]
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
+
+export function WebSiteStructuredData() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ATN Soul",
+    "url": "https://atnsoul.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://atnsoul.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   };
 
   return (
