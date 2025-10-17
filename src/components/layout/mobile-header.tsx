@@ -10,6 +10,8 @@ export function MobileHeader() {
   const [isStreamOpen, setIsStreamOpen] = useState(false)
   const streamBtnRef = useRef<HTMLButtonElement | null>(null)
   const [menuPos, setMenuPos] = useState<{ left: number; top: number }>({ left: 0, top: 0 })
+  const audioRef = useRef<HTMLAudioElement>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -54,6 +56,22 @@ export function MobileHeader() {
       window.removeEventListener('orientationchange', onResize)
     }
   }, [isStreamOpen])
+
+  const togglePlay = async () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause()
+        setIsPlaying(false)
+      } else {
+        try {
+          await audioRef.current.play()
+          setIsPlaying(true)
+        } catch (e) {
+          setIsPlaying(false)
+        }
+      }
+    }
+  }
 
   return (
     <div className="mobile-header">
@@ -222,6 +240,7 @@ export function MobileHeader() {
           padding: '20px',
           boxShadow: 'none'
         }}>
+          <audio ref={audioRef} src="/audio/atnsoul-track.mp3" />
           <div style={{
             display: 'flex',
             flexDirection: 'column',
@@ -304,6 +323,35 @@ export function MobileHeader() {
             >
               <span className="shooting-underline">Co-Productions</span>
             </a>
+
+            {/* Unreleased + bouton play/pause (logique desktop adaptée) */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '8px 0 6px 0' }}>
+              <span style={{ 
+                color: '#ed002a', 
+                fontFamily: 'Lucida Console, monospace',
+                fontSize: '0.95rem',
+                WebkitTextStroke: '0.5px black',
+                textStroke: '0.5px black'
+              }}>unreleased</span>
+              <button 
+                onClick={togglePlay}
+                style={{ 
+                  padding: '5px', 
+                  background: 'transparent', 
+                  border: 'none', 
+                  color: '#ed002a', 
+                  cursor: 'pointer',
+                  fontSize: '16px',
+                  transition: 'color 0.3s ease'
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#ed002a')}
+                aria-label={isPlaying ? 'Pause' : 'Play'}
+              >
+                {isPlaying ? '⏸' : '▶'}
+              </button>
+            </div>
+
 
             {/* Séparateur */}
             <div style={{
