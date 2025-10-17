@@ -194,6 +194,21 @@ export default function NYCSessionsPage() {
                 Apple Music
               </a>
             </div>
+            {/* Réseaux sociaux */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
+              <a href="https://www.tiktok.com/@atnsoul" target="_blank" rel="noopener noreferrer" style={{ color: '#0066cc', display: 'inline-flex', transition: 'color 0.3s ease' }} onMouseEnter={(e) => (e.currentTarget.style.color = 'black')} onMouseLeave={(e) => (e.currentTarget.style.color = '#0066cc')} aria-label="TikTok">
+                <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" style={{ display: 'block' }}>
+                  <path fill="currentColor" d="M12.5 3h2.2c.3 1.8 1.5 3.3 3.2 4v2.2c-1.2-.02-2.4-.37-3.4-1v5.5c0 3-2.4 5.4-5.4 5.4S4 16.7 4 13.7c0-2.9 2.2-5.2 5.1-5.4v2.3c-1.6.2-2.8 1.6-2.8 3.2 0 1.8 1.5 3.3 3.3 3.3s3.3-1.5 3.3-3.3V3z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/atnsoul/" target="_blank" rel="noopener noreferrer" style={{ color: '#0066cc', display: 'inline-flex', transition: 'color 0.3s ease' }} onMouseEnter={(e) => (e.currentTarget.style.color = 'black')} onMouseLeave={(e) => (e.currentTarget.style.color = '#0066cc')} aria-label="Instagram">
+                <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" style={{ display: 'block' }}>
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="17.5" cy="6.5" r="1.4" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -211,7 +226,7 @@ export default function NYCSessionsPage() {
 
             <div style={{ color: 'black', lineHeight: '1.6', fontFamily: 'Lucida Console, monospace', fontSize: '0.85rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                <p style={{ fontSize: '0.97rem', margin: 0, color: '#00ff00' }}>
+                <p style={{ fontSize: '0.97rem', margin: 0, color: '#0024cc' }}>
                   role : composer & performer
                 </p>
               </div>
@@ -319,7 +334,7 @@ export default function NYCSessionsPage() {
 
             <div style={{ color: 'black', lineHeight: '1.6', fontFamily: 'Lucida Console, monospace', fontSize: '0.85rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                <p style={{ fontSize: '0.97rem', margin: 0, color: '#00ff00' }}>
+                <p style={{ fontSize: '0.97rem', margin: 0, color: '#0024cc' }}>
                   role : composer & performer
                 </p>
               </div>

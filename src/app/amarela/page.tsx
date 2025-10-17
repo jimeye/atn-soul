@@ -228,7 +228,7 @@ export default function AmarelaPage() {
 
             <div style={{ color: 'black', lineHeight: '1.6', fontFamily: 'Lucida Console, monospace', fontSize: '0.85rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                <p style={{ fontSize: '0.97rem', margin: 0, color: '#00ff00' }}>
+                <p style={{ fontSize: '0.97rem', margin: 0, color: '#0024cc' }}>
                   role : producer, composer & creative director
                 </p>
               </div>
@@ -375,7 +375,7 @@ export default function AmarelaPage() {
 
             <div style={{ color: 'black', lineHeight: '1.6', fontFamily: 'Lucida Console, monospace', fontSize: '0.85rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                <p style={{ fontSize: '0.97rem', margin: 0, color: '#00ff00' }}>
+                <p style={{ fontSize: '0.97rem', margin: 0, color: '#0024cc' }}>
                   role : producer, composer & creative director
                 </p>
               </div>
